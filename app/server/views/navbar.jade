@@ -5,12 +5,12 @@ div.navbar.navbar-fixed-top
 				li
 					a(href='/home').brand Home
 				li
-					a(href='/orders').brand | Заказы
+					a(href='/orders').brand | Orders
 				li
-					a(href='/place-order').brand | Сделать заказ
+					a(href='/place-order').brand | Make an order
 				if user.is_admin
 					li
-						a(href='/manage-orders').brand | Рассмотреть заказы
+						a(href='/manage-orders').brand | Consider orders
 			button#btn-logout.btn.btn-primary
 				i.icon-lock.icon-white
 				| Sign Out

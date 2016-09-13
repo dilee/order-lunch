@@ -8,19 +8,19 @@ block content
 			thead
 				tr
 					th
-						| Дата заказа
+						| Order Date
 					th
-						| Кто заказывал
+						| Who ordered
 					th
 						| URL
 					th
-						| Первое
+						| First
 					th
-						| Второе
+						| Second
 					th
-						| Комментарий
+						| A comment
 					th
-						| Действия
+						| Actions
 			tbody
 				each order in orders
 					if order.fullfilled
@@ -42,10 +42,10 @@ block content
 							| #{order.additional_notes}
 						td
 							if order.fullfilled
-								em Уже выполнен
+								em Already Achieved
 							else
-								em.hide Уже выполнен
-								button(data-order-id="#{order._id}").submit-order.submit.btn Выполнен!
+								em.hide Already Made
+								button(data-order-id="#{order._id}").submit-order.submit.btn Completed!
 
 	include ../modals/alert
 	include ../modals/confirm
