@@ -39,7 +39,7 @@ OrdersController.prototype.onPlaceSuccess = function()
 {
 	$('.modal-alert').modal({ show : false, keyboard : true, backdrop : true });
 	$('.modal-alert .modal-header h3').text('Success!');
-	$('.modal-alert .modal-body p').html('Заказ принят, перенаправляем на страницу заказов...');
+	$('.modal-alert .modal-body p').html('The order is accepted, on the order page redirect ...');
 	$('.modal-alert').modal('show');
 	$('.modal-alert button').off('click');
 	setTimeout(function(){window.location.href = '/orders';}, 3000);
@@ -49,7 +49,7 @@ OrdersController.prototype.onManageSuccess = function(button)
 {
 	$('.modal-alert').modal({ show : false, keyboard : true, backdrop : true });
 	$('.modal-alert .modal-header h3').text('Success!');
-	$('.modal-alert .modal-body p').html('Заказ обработан');
+	$('.modal-alert .modal-body p').html('Order processed');
 	$('.modal-alert').modal('show');
 	$('.modal-alert button').off('click');
 	setTimeout(function(){$('.modal-alert').modal('hide');}, 3000);
@@ -63,7 +63,7 @@ OrdersController.prototype.onManageFail = function()
 {
 	$('.modal-alert').modal({ show : false, keyboard : true, backdrop : true });
 	$('.modal-alert .modal-header h3').text('Success!');
-	$('.modal-alert .modal-body p').html('Ошибка обработки заказа. Попробуйте ещё раз, или обратитесь к разработчику');
+	$('.modal-alert .modal-body p').html('Order processing error . Please try again , or contact the manufacturer');
 	$('.modal-alert').modal('show');
 	$('.modal-alert button').off('click');
 	setTimeout(function(){$('.modal-alert').modal('hide');}, 3000);
